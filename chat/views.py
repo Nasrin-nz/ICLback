@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-
-=======
 from rest_framework.permissions import AllowAny
->>>>>>> 8106b27
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -15,16 +11,10 @@ from django.utils import timezone
 from django.http import JsonResponse
 from django.views import View
 import json
-<<<<<<< HEAD
-from .models import Questionnaire, Answer, Questions, Option, Chats
-
-
-=======
 from django.utils.decorators import method_decorator
 from django.views.decorators.csrf import csrf_exempt
 from .models import Questionnaire, Answer, Question, Option
 from django.contrib.auth.models import User  # Import the User model
->>>>>>> 8106b27
 
 
 @method_decorator(csrf_exempt, name='dispatch')  # CSRF exemption added
@@ -78,42 +68,12 @@ class StoreResponseView(View):
                 time=timezone.now(),  # Automatically capture the current timestamp
             )
 
-<<<<<<< HEAD
-            # Step 2: Process each answer entry and store the details
-=======
             # Step 2: Process each answer entry and store the lists
->>>>>>> 8106b27
             for answer in answers:
                 question_id = answer.get('question_id')
                 answer_ids = answer.get('answer_ids', [])
                 message_ids = answer.get('message_ids', [])
 
-<<<<<<< HEAD
-                # Retrieve the 'question' value from the 'questions' table for the given q_id (question_id)
-                question_text = Questions.objects.using('sql_server_db').get(id=question_id).question
-
-                # Retrieve the 'Answers' value from the 'options' table for each answer_id
-                answer_texts = [
-                    Option.objects.using('sql_server_db').get(id=ans_id).Answers for ans_id in answer_ids
-                ]
-
-                # Retrieve the 'text' value from the 'chats' table for each msg_id
-                message_texts = [
-                    Chats.objects.using('sql_server_db').get(id=msg_id).text for msg_id in message_ids
-                ]
-
-                # Join the retrieved texts into comma-separated strings
-                answer_texts_str = ",".join(answer_texts)
-                message_texts_str = ",".join(message_texts)
-
-                # Insert the data into the answers table
-                Answer.objects.using('sql_server_db').create(
-                    questionnaire_id=questionnaire.id,
-                    question=question_text,  # Store the detailed question text instead of the id
-                    answer=answer_texts_str,  # Store the detailed answer texts as a comma-separated string
-                    msg=message_texts_str,  # Store the detailed message texts as a comma-separated string
-                )
-=======
                 question = Question.objects.using('sql_server_db').get(id=question_id)  # Fetch the Question instance
 
                 # Ensure every answer_id is associated with every message_id
@@ -126,7 +86,6 @@ class StoreResponseView(View):
                             answer=option,
                             chat_id=message_id,  # Store each message_id
                         )
->>>>>>> 8106b27
 
             # Return a success response with the ID of the created questionnaire
             return JsonResponse({'status': 'success', 'questionnaire_id': questionnaire.id})

@@ -1,0 +1,17 @@
+[0;1;31m×[0m gunicorn.service - gunicorn daemon
+     Loaded: loaded (/etc/systemd/system/gunicorn.service; disabled; vendor preset: enabled)
+     Active: [0;1;31mfailed[0m (Result: exit-code) since Sat 2024-08-24 21:20:59 UTC; 11s ago
+TriggeredBy: [0;1;32m●[0m gunicorn.socket
+   Main PID: 20213 (code=exited, status=3)
+        CPU: 583ms
+
+Aug 24 21:20:59 icl-data gunicorn[20216]:   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+Aug 24 21:20:59 icl-data gunicorn[20216]:   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+Aug 24 21:20:59 icl-data gunicorn[20216]: ModuleNotFoundError: No module named 'ptab'
+Aug 24 21:20:59 icl-data gunicorn[20216]: [2024-08-24 21:20:59 +0000] [20216] [INFO] Worker exiting (pid: 20216)
+Aug 24 21:20:59 icl-data gunicorn[20213]: [2024-08-24 21:20:59 +0000] [20213] [ERROR] Worker (pid:20215) exited with code 3
+Aug 24 21:20:59 icl-data gunicorn[20213]: [2024-08-24 21:20:59 +0000] [20213] [ERROR] Worker (pid:20216) was sent SIGTERM!
+Aug 24 21:20:59 icl-data gunicorn[20213]: [2024-08-24 21:20:59 +0000] [20213] [ERROR] Shutting down: Master
+Aug 24 21:20:59 icl-data gunicorn[20213]: [2024-08-24 21:20:59 +0000] [20213] [ERROR] Reason: Worker failed to boot.
+Aug 24 21:20:59 icl-data systemd[1]: [0;1;39m[0;1;31m[0;1;39mgunicorn.service: Main process exited, code=exited, status=3/NOTIMPLEMENTED[0m
+Aug 24 21:20:59 icl-data systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgunicorn.service: Failed with result 'exit-code'.[0m

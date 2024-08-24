@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 # Simple JWT settings
 from datetime import timedelta
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,7 +27,7 @@ SECRET_KEY = 'django-insecure--0&(d=ch4@+%+i=fi6z57==73q$ors8o%_6b%2)ecn3h7)bxnx
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -113,16 +114,27 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     },
     'sql_server_db': {
-        'ENGINE': 'mssql',
-        'NAME': 'ICL',
-        'HOST': 'localhost',
-        'PORT': '',
-        'OPTIONS': {
-            'dsn': 'MySQLServerDSN',
-            'driver': 'ODBC Driver 17 for SQL Server',
-            'trusted_connection': 'yes',  # Use this if you're connecting with Windows Authentication
-            'database': 'ICL',
+        "ENGINE": "mssql",
+        "NAME": "ICL",
+        "USER": "sa",
+        "PASSWORD": "Sdferf4sdefrgi0",
+        "HOST": ".",
+        "PORT": "1433",
+        "OPTIONS": {"driver": "ODBC Driver 17 for SQL Server", 
         },
+
+        #'ENGINE': 'mssql',
+        #'NAME': 'ICL',
+        #'HOST': 'localhost',
+        #'PORT': '',
+        #'OPTIONS': {
+        #    'dsn': 'MySQLServerDSN',
+        #    'driver': 'ODBC Driver 17 for SQL Server',
+        #    'trusted_connection': 'yes',  # Use this if you're connecting with Windows Authentication
+        #    'database': 'ICL',
+        #},
+        
+
     }
 }
 
@@ -149,7 +161,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'fa'
 
 TIME_ZONE = 'UTC'
 
@@ -162,6 +174,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+#STATIC_ROOT = 'static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

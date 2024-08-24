@@ -1,0 +1,273 @@
+[Sat Aug 24 20:58:47.135452 2024] [wsgi:info] [pid 16824:tid 140076527691648] mod_wsgi (pid=16824): Attach interpreter ''.
+[Sat Aug 24 20:58:47.153927 2024] [wsgi:info] [pid 16824:tid 140076527691648] mod_wsgi (pid=16824): Adding '/opt/ICLback/.venv/bin/python3' to path.
+[Sat Aug 24 21:01:23.634029 2024] [wsgi:info] [pid 16824:tid 140076497552960] mod_wsgi (pid=16824): Create interpreter 'ICLback|'.
+[Sat Aug 24 21:01:23.652919 2024] [wsgi:info] [pid 16824:tid 140076497552960] mod_wsgi (pid=16824): Adding '/opt/ICLback/.venv/bin/python3' to path.
+[Sat Aug 24 21:01:23.656623 2024] [wsgi:info] [pid 16824:tid 140076497552960] [remote 204.18.243.228:33368] mod_wsgi (pid=16824, process='ICLback', application='ICLback|'): Loading Python script file '/opt/ICLback/tagging/wsgi.py'.
+[Sat Aug 24 21:01:24.475100 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:33368] mod_wsgi (pid=16824): Failed to exec Python script file '/opt/ICLback/tagging/wsgi.py'.
+[Sat Aug 24 21:01:24.475295 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:33368] mod_wsgi (pid=16824): Exception occurred processing WSGI script '/opt/ICLback/tagging/wsgi.py'.
+[Sat Aug 24 21:01:24.477772 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:33368] Traceback (most recent call last):
+[Sat Aug 24 21:01:24.478026 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:33368]   File "/opt/ICLback/tagging/wsgi.py", line 16, in <module>
+[Sat Aug 24 21:01:24.478178 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:33368]     application = get_wsgi_application()
+[Sat Aug 24 21:01:24.478233 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:33368]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Sat Aug 24 21:01:24.478263 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:33368]     django.setup(set_prefix=False)
+[Sat Aug 24 21:01:24.478347 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:33368]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+[Sat Aug 24 21:01:24.478383 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:33368]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Sat Aug 24 21:01:24.478459 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:33368]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/conf/__init__.py", line 89, in __getattr__
+[Sat Aug 24 21:01:24.478576 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:33368]     self._setup(name)
+[Sat Aug 24 21:01:24.478621 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:33368]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/conf/__init__.py", line 76, in _setup
+[Sat Aug 24 21:01:24.478650 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:33368]     self._wrapped = Settings(settings_module)
+[Sat Aug 24 21:01:24.478687 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:33368]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+[Sat Aug 24 21:01:24.478714 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:33368]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Sat Aug 24 21:01:24.478750 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:33368]   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+[Sat Aug 24 21:01:24.478779 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:33368]     return _bootstrap._gcd_import(name[level:], package, level)
+[Sat Aug 24 21:01:24.478816 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:33368]   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[Sat Aug 24 21:01:24.478855 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:33368]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[Sat Aug 24 21:01:24.478938 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:33368]   File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+[Sat Aug 24 21:01:24.478978 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:33368]   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+[Sat Aug 24 21:01:24.479017 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:33368]   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[Sat Aug 24 21:01:24.479056 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:33368]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[Sat Aug 24 21:01:24.479094 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:33368]   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+[Sat Aug 24 21:01:24.479187 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:33368] ModuleNotFoundError: No module named 'tagging'
+[Sat Aug 24 21:01:24.570814 2024] [wsgi:info] [pid 16824:tid 140076380055104] [remote 204.18.243.228:33354] mod_wsgi (pid=16824, process='ICLback', application='ICLback|'): Loading Python script file '/opt/ICLback/tagging/wsgi.py'.
+[Sat Aug 24 21:01:24.573164 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:33354] mod_wsgi (pid=16824): Failed to exec Python script file '/opt/ICLback/tagging/wsgi.py'.
+[Sat Aug 24 21:01:24.573294 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:33354] mod_wsgi (pid=16824): Exception occurred processing WSGI script '/opt/ICLback/tagging/wsgi.py'.
+[Sat Aug 24 21:01:24.573774 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:33354] Traceback (most recent call last):
+[Sat Aug 24 21:01:24.574039 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:33354]   File "/opt/ICLback/tagging/wsgi.py", line 16, in <module>
+[Sat Aug 24 21:01:24.574067 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:33354]     application = get_wsgi_application()
+[Sat Aug 24 21:01:24.574086 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:33354]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Sat Aug 24 21:01:24.574100 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:33354]     django.setup(set_prefix=False)
+[Sat Aug 24 21:01:24.574184 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:33354]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+[Sat Aug 24 21:01:24.574204 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:33354]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Sat Aug 24 21:01:24.574280 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:33354]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/conf/__init__.py", line 89, in __getattr__
+[Sat Aug 24 21:01:24.574308 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:33354]     self._setup(name)
+[Sat Aug 24 21:01:24.574328 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:33354]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/conf/__init__.py", line 76, in _setup
+[Sat Aug 24 21:01:24.574342 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:33354]     self._wrapped = Settings(settings_module)
+[Sat Aug 24 21:01:24.574357 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:33354]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+[Sat Aug 24 21:01:24.574372 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:33354]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Sat Aug 24 21:01:24.574406 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:33354]   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+[Sat Aug 24 21:01:24.574533 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:33354]     return _bootstrap._gcd_import(name[level:], package, level)
+[Sat Aug 24 21:01:24.574613 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:33354]   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[Sat Aug 24 21:01:24.574651 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:33354]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[Sat Aug 24 21:01:24.574727 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:33354]   File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+[Sat Aug 24 21:01:24.574787 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:33354]   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+[Sat Aug 24 21:01:24.574817 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:33354]   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[Sat Aug 24 21:01:24.574850 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:33354]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[Sat Aug 24 21:01:24.574901 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:33354]   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+[Sat Aug 24 21:01:24.574956 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:33354] ModuleNotFoundError: No module named 'tagging'
+[Sat Aug 24 21:01:43.860217 2024] [wsgi:info] [pid 16824:tid 140076497552960] [remote 204.18.243.228:43312] mod_wsgi (pid=16824, process='ICLback', application='ICLback|'): Loading Python script file '/opt/ICLback/tagging/wsgi.py'.
+[Sat Aug 24 21:01:43.863620 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:43312] mod_wsgi (pid=16824): Failed to exec Python script file '/opt/ICLback/tagging/wsgi.py'.
+[Sat Aug 24 21:01:43.863899 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:43312] mod_wsgi (pid=16824): Exception occurred processing WSGI script '/opt/ICLback/tagging/wsgi.py'.
+[Sat Aug 24 21:01:43.864683 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:43312] Traceback (most recent call last):
+[Sat Aug 24 21:01:43.864923 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:43312]   File "/opt/ICLback/tagging/wsgi.py", line 16, in <module>
+[Sat Aug 24 21:01:43.865054 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:43312]     application = get_wsgi_application()
+[Sat Aug 24 21:01:43.865190 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:43312]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Sat Aug 24 21:01:43.865365 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:43312]     django.setup(set_prefix=False)
+[Sat Aug 24 21:01:43.865562 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:43312]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+[Sat Aug 24 21:01:43.865710 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:43312]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Sat Aug 24 21:01:43.865888 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:43312]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/conf/__init__.py", line 89, in __getattr__
+[Sat Aug 24 21:01:43.866037 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:43312]     self._setup(name)
+[Sat Aug 24 21:01:43.866209 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:43312]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/conf/__init__.py", line 76, in _setup
+[Sat Aug 24 21:01:43.866381 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:43312]     self._wrapped = Settings(settings_module)
+[Sat Aug 24 21:01:43.866494 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:43312]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+[Sat Aug 24 21:01:43.866598 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:43312]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Sat Aug 24 21:01:43.866722 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:43312]   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+[Sat Aug 24 21:01:43.866888 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:43312]     return _bootstrap._gcd_import(name[level:], package, level)
+[Sat Aug 24 21:01:43.867023 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:43312]   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[Sat Aug 24 21:01:43.867188 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:43312]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[Sat Aug 24 21:01:43.867310 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:43312]   File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+[Sat Aug 24 21:01:43.867425 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:43312]   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+[Sat Aug 24 21:01:43.867567 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:43312]   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[Sat Aug 24 21:01:43.867694 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:43312]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[Sat Aug 24 21:01:43.867810 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:43312]   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+[Sat Aug 24 21:01:43.868006 2024] [wsgi:error] [pid 16824:tid 140076497552960] [remote 204.18.243.228:43312] ModuleNotFoundError: No module named 'tagging'
+[Sat Aug 24 21:01:44.014472 2024] [wsgi:info] [pid 16824:tid 140076380055104] [remote 204.18.243.228:43304] mod_wsgi (pid=16824, process='ICLback', application='ICLback|'): Loading Python script file '/opt/ICLback/tagging/wsgi.py'.
+[Sat Aug 24 21:01:44.017096 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:43304] mod_wsgi (pid=16824): Failed to exec Python script file '/opt/ICLback/tagging/wsgi.py'.
+[Sat Aug 24 21:01:44.017586 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:43304] mod_wsgi (pid=16824): Exception occurred processing WSGI script '/opt/ICLback/tagging/wsgi.py'.
+[Sat Aug 24 21:01:44.018324 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:43304] Traceback (most recent call last):
+[Sat Aug 24 21:01:44.018666 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:43304]   File "/opt/ICLback/tagging/wsgi.py", line 16, in <module>
+[Sat Aug 24 21:01:44.018849 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:43304]     application = get_wsgi_application()
+[Sat Aug 24 21:01:44.019059 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:43304]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+[Sat Aug 24 21:01:44.019238 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:43304]     django.setup(set_prefix=False)
+[Sat Aug 24 21:01:44.019432 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:43304]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/__init__.py", line 19, in setup
+[Sat Aug 24 21:01:44.019597 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:43304]     configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+[Sat Aug 24 21:01:44.019818 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:43304]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/conf/__init__.py", line 89, in __getattr__
+[Sat Aug 24 21:01:44.019983 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:43304]     self._setup(name)
+[Sat Aug 24 21:01:44.020158 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:43304]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/conf/__init__.py", line 76, in _setup
+[Sat Aug 24 21:01:44.020328 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:43304]     self._wrapped = Settings(settings_module)
+[Sat Aug 24 21:01:44.020511 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:43304]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/conf/__init__.py", line 190, in __init__
+[Sat Aug 24 21:01:44.020679 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:43304]     mod = importlib.import_module(self.SETTINGS_MODULE)
+[Sat Aug 24 21:01:44.020858 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:43304]   File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+[Sat Aug 24 21:01:44.021024 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:43304]     return _bootstrap._gcd_import(name[level:], package, level)
+[Sat Aug 24 21:01:44.021207 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:43304]   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[Sat Aug 24 21:01:44.021428 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:43304]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[Sat Aug 24 21:01:44.021613 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:43304]   File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+[Sat Aug 24 21:01:44.021795 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:43304]   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+[Sat Aug 24 21:01:44.021980 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:43304]   File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+[Sat Aug 24 21:01:44.022199 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:43304]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[Sat Aug 24 21:01:44.022390 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:43304]   File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+[Sat Aug 24 21:01:44.022635 2024] [wsgi:error] [pid 16824:tid 140076380055104] [remote 204.18.243.228:43304] ModuleNotFoundError: No module named 'tagging'
+[Sat Aug 24 21:02:58.003331 2024] [wsgi:info] [pid 16824:tid 140076527691648] mod_wsgi (pid=16824): Shutdown requested 'ICLback'.
+[Sat Aug 24 21:02:58.005415 2024] [wsgi:info] [pid 16824:tid 140076527691648] mod_wsgi (pid=16824): Stopping process 'ICLback'.
+[Sat Aug 24 21:02:58.005474 2024] [wsgi:info] [pid 16824:tid 140076527691648] mod_wsgi (pid=16824): Destroying interpreters.
+[Sat Aug 24 21:02:58.005539 2024] [wsgi:info] [pid 16824:tid 140076527691648] mod_wsgi (pid=16824): Destroy interpreter 'ICLback|'.
+[Sat Aug 24 21:02:58.007301 2024] [wsgi:info] [pid 16824:tid 140076527691648] mod_wsgi (pid=16824): End interpreter 'ICLback|'.
+[Sat Aug 24 21:03:02.415232 2024] [wsgi:info] [pid 17072:tid 140384939022208] mod_wsgi (pid=17072): Attach interpreter ''.
+[Sat Aug 24 21:03:02.433113 2024] [wsgi:info] [pid 17072:tid 140384939022208] mod_wsgi (pid=17072): Adding '/opt/ICLback/.venv/bin/python3' to path.
+[Sat Aug 24 21:03:03.364376 2024] [wsgi:info] [pid 17072:tid 140384908883520] mod_wsgi (pid=17072): Create interpreter 'ICLback|'.
+[Sat Aug 24 21:03:03.408776 2024] [wsgi:info] [pid 17072:tid 140384908883520] mod_wsgi (pid=17072): Adding '/opt/ICLback/.venv/bin/python3' to path.
+[Sat Aug 24 21:03:03.417210 2024] [wsgi:info] [pid 17072:tid 140384908883520] [remote 204.18.243.228:50582] mod_wsgi (pid=17072, process='ICLback', application='ICLback|'): Loading Python script file '/opt/ICLback/tagging/wsgi.py'.
+[Sat Aug 24 21:03:04.700004 2024] [wsgi:error] [pid 17072:tid 140384908883520] CustomUserAdmin is being registered
+[Sat Aug 24 21:03:04.734502 2024] [wsgi:error] [pid 17072:tid 140384908883520] [remote 204.18.243.228:50582] Invalid HTTP_HOST header: '95.38.65.38'. You may need to add '95.38.65.38' to ALLOWED_HOSTS.
+[Sat Aug 24 21:03:04.734818 2024] [wsgi:error] [pid 17072:tid 140384908883520] [remote 204.18.243.228:50582] Traceback (most recent call last):
+[Sat Aug 24 21:03:04.734970 2024] [wsgi:error] [pid 17072:tid 140384908883520] [remote 204.18.243.228:50582]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+[Sat Aug 24 21:03:04.735068 2024] [wsgi:error] [pid 17072:tid 140384908883520] [remote 204.18.243.228:50582]     response = get_response(request)
+[Sat Aug 24 21:03:04.735159 2024] [wsgi:error] [pid 17072:tid 140384908883520] [remote 204.18.243.228:50582]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+[Sat Aug 24 21:03:04.735249 2024] [wsgi:error] [pid 17072:tid 140384908883520] [remote 204.18.243.228:50582]     response = self.process_request(request)
+[Sat Aug 24 21:03:04.735337 2024] [wsgi:error] [pid 17072:tid 140384908883520] [remote 204.18.243.228:50582]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+[Sat Aug 24 21:03:04.735469 2024] [wsgi:error] [pid 17072:tid 140384908883520] [remote 204.18.243.228:50582]     host = request.get_host()
+[Sat Aug 24 21:03:04.735621 2024] [wsgi:error] [pid 17072:tid 140384908883520] [remote 204.18.243.228:50582]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/http/request.py", line 151, in get_host
+[Sat Aug 24 21:03:04.735718 2024] [wsgi:error] [pid 17072:tid 140384908883520] [remote 204.18.243.228:50582]     raise DisallowedHost(msg)
+[Sat Aug 24 21:03:04.735866 2024] [wsgi:error] [pid 17072:tid 140384908883520] [remote 204.18.243.228:50582] django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '95.38.65.38'. You may need to add '95.38.65.38' to ALLOWED_HOSTS.
+[Sat Aug 24 21:03:04.944675 2024] [wsgi:error] [pid 17072:tid 140384908883520] [remote 204.18.243.228:50582] Bad Request: /
+[Sat Aug 24 21:03:05.200513 2024] [wsgi:error] [pid 17072:tid 140384791385664] [remote 204.18.243.228:50596] Invalid HTTP_HOST header: '95.38.65.38'. You may need to add '95.38.65.38' to ALLOWED_HOSTS.
+[Sat Aug 24 21:03:05.200647 2024] [wsgi:error] [pid 17072:tid 140384791385664] [remote 204.18.243.228:50596] Traceback (most recent call last):
+[Sat Aug 24 21:03:05.200682 2024] [wsgi:error] [pid 17072:tid 140384791385664] [remote 204.18.243.228:50596]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+[Sat Aug 24 21:03:05.200703 2024] [wsgi:error] [pid 17072:tid 140384791385664] [remote 204.18.243.228:50596]     response = get_response(request)
+[Sat Aug 24 21:03:05.200714 2024] [wsgi:error] [pid 17072:tid 140384791385664] [remote 204.18.243.228:50596]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+[Sat Aug 24 21:03:05.200724 2024] [wsgi:error] [pid 17072:tid 140384791385664] [remote 204.18.243.228:50596]     response = self.process_request(request)
+[Sat Aug 24 21:03:05.200734 2024] [wsgi:error] [pid 17072:tid 140384791385664] [remote 204.18.243.228:50596]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+[Sat Aug 24 21:03:05.200744 2024] [wsgi:error] [pid 17072:tid 140384791385664] [remote 204.18.243.228:50596]     host = request.get_host()
+[Sat Aug 24 21:03:05.200754 2024] [wsgi:error] [pid 17072:tid 140384791385664] [remote 204.18.243.228:50596]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/http/request.py", line 151, in get_host
+[Sat Aug 24 21:03:05.200791 2024] [wsgi:error] [pid 17072:tid 140384791385664] [remote 204.18.243.228:50596]     raise DisallowedHost(msg)
+[Sat Aug 24 21:03:05.200803 2024] [wsgi:error] [pid 17072:tid 140384791385664] [remote 204.18.243.228:50596] django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '95.38.65.38'. You may need to add '95.38.65.38' to ALLOWED_HOSTS.
+[Sat Aug 24 21:03:05.298694 2024] [wsgi:error] [pid 17072:tid 140384791385664] [remote 204.18.243.228:50596] Bad Request: /favicon.ico
+[Sat Aug 24 21:03:16.927809 2024] [wsgi:info] [pid 17072:tid 140384939022208] mod_wsgi (pid=17072): Shutdown requested 'ICLback'.
+[Sat Aug 24 21:03:16.929025 2024] [wsgi:info] [pid 17072:tid 140384939022208] mod_wsgi (pid=17072): Stopping process 'ICLback'.
+[Sat Aug 24 21:03:16.929243 2024] [wsgi:info] [pid 17072:tid 140384939022208] mod_wsgi (pid=17072): Destroying interpreters.
+[Sat Aug 24 21:03:16.929455 2024] [wsgi:info] [pid 17072:tid 140384939022208] mod_wsgi (pid=17072): Destroy interpreter 'ICLback|'.
+[Sat Aug 24 21:03:16.930020 2024] [wsgi:info] [pid 17072:tid 140384939022208] mod_wsgi (pid=17072): End interpreter 'ICLback|'.
+[Sat Aug 24 21:03:20.697499 2024] [wsgi:info] [pid 17215:tid 140551112701824] mod_wsgi (pid=17215): Attach interpreter ''.
+[Sat Aug 24 21:03:20.713937 2024] [wsgi:info] [pid 17215:tid 140551112701824] mod_wsgi (pid=17215): Adding '/opt/ICLback/.venv/bin/python3' to path.
+[Sat Aug 24 21:03:22.051800 2024] [wsgi:info] [pid 17215:tid 140551082563136] mod_wsgi (pid=17215): Create interpreter 'ICLback|'.
+[Sat Aug 24 21:03:22.070225 2024] [wsgi:info] [pid 17215:tid 140551082563136] mod_wsgi (pid=17215): Adding '/opt/ICLback/.venv/bin/python3' to path.
+[Sat Aug 24 21:03:22.071773 2024] [wsgi:info] [pid 17215:tid 140551082563136] [remote 204.18.243.228:57506] mod_wsgi (pid=17215, process='ICLback', application='ICLback|'): Loading Python script file '/opt/ICLback/tagging/wsgi.py'.
+[Sat Aug 24 21:03:22.981690 2024] [wsgi:error] [pid 17215:tid 140551082563136] CustomUserAdmin is being registered
+[Sat Aug 24 21:03:23.249813 2024] [wsgi:error] [pid 17215:tid 140551082563136] [remote 204.18.243.228:57506] Unauthorized: /
+[Sat Aug 24 21:03:23.318962 2024] [core:info] [pid 17216:tid 140551090955840] [client 204.18.243.228:57506] AH00128: File does not exist: /opt/ICLback/static/rest_framework/css/bootstrap.min.css, referer: http://95.38.65.38/
+[Sat Aug 24 21:03:23.328698 2024] [core:info] [pid 17216:tid 140551074170432] [client 204.18.243.228:57494] AH00128: File does not exist: /opt/ICLback/static/rest_framework/css/bootstrap-tweaks.css, referer: http://95.38.65.38/
+[Sat Aug 24 21:03:23.387863 2024] [core:info] [pid 17217:tid 140551090955840] [client 204.18.243.228:57514] AH00128: File does not exist: /opt/ICLback/static/rest_framework/css/prettify.css, referer: http://95.38.65.38/
+[Sat Aug 24 21:03:23.388006 2024] [core:info] [pid 17216:tid 140550858602048] [client 204.18.243.228:57506] AH00128: File does not exist: /opt/ICLback/static/rest_framework/css/default.css, referer: http://95.38.65.38/
+[Sat Aug 24 21:03:23.389052 2024] [core:info] [pid 17216:tid 140550850209344] [client 204.18.243.228:57494] AH00128: File does not exist: /opt/ICLback/static/rest_framework/js/ajax-form.js, referer: http://95.38.65.38/
+[Sat Aug 24 21:03:23.402542 2024] [core:info] [pid 17217:tid 140551082563136] [client 204.18.243.228:57526] AH00128: File does not exist: /opt/ICLback/static/rest_framework/js/jquery-3.7.1.min.js, referer: http://95.38.65.38/
+[Sat Aug 24 21:03:23.402782 2024] [core:info] [pid 17216:tid 140550841816640] [client 204.18.243.228:57510] AH00128: File does not exist: /opt/ICLback/static/rest_framework/js/csrf.js, referer: http://95.38.65.38/
+[Sat Aug 24 21:03:23.465394 2024] [core:info] [pid 17217:tid 140551074170432] [client 204.18.243.228:57514] AH00128: File does not exist: /opt/ICLback/static/rest_framework/js/bootstrap.min.js, referer: http://95.38.65.38/
+[Sat Aug 24 21:03:23.468166 2024] [core:info] [pid 17216:tid 140550833423936] [client 204.18.243.228:57506] AH00128: File does not exist: /opt/ICLback/static/rest_framework/js/prettify-min.js, referer: http://95.38.65.38/
+[Sat Aug 24 21:03:23.482105 2024] [core:info] [pid 17216:tid 140550825031232] [client 204.18.243.228:57494] AH00128: File does not exist: /opt/ICLback/static/rest_framework/js/default.js, referer: http://95.38.65.38/
+[Sat Aug 24 21:03:23.485657 2024] [core:info] [pid 17217:tid 140550724384320] [client 204.18.243.228:57526] AH00128: File does not exist: /opt/ICLback/static/rest_framework/js/load-ajax-form.js, referer: http://95.38.65.38/
+[Sat Aug 24 21:03:23.582468 2024] [wsgi:error] [pid 17215:tid 140550965065280] [remote 204.18.243.228:57526] Not Found: /favicon.ico
+[Sat Aug 24 21:04:14.813211 2024] [reqtimeout:info] [pid 17217:tid 140550841816640] [client 204.18.243.228:57512] AH01382: Request header read timeout
+[Sat Aug 24 21:05:57.547057 2024] [wsgi:error] [pid 17215:tid 140551082563136] [remote 185.16.39.118:47744] Unauthorized: /
+[Sat Aug 24 21:07:41.742644 2024] [wsgi:info] [pid 17215:tid 140551112701824] mod_wsgi (pid=17215): Shutdown requested 'ICLback'.
+[Sat Aug 24 21:07:41.744943 2024] [wsgi:info] [pid 17215:tid 140551112701824] mod_wsgi (pid=17215): Stopping process 'ICLback'.
+[Sat Aug 24 21:07:41.745026 2024] [wsgi:info] [pid 17215:tid 140551112701824] mod_wsgi (pid=17215): Destroying interpreters.
+[Sat Aug 24 21:07:41.745124 2024] [wsgi:info] [pid 17215:tid 140551112701824] mod_wsgi (pid=17215): Destroy interpreter 'ICLback|'.
+[Sat Aug 24 21:07:41.747194 2024] [wsgi:info] [pid 17215:tid 140551112701824] mod_wsgi (pid=17215): End interpreter 'ICLback|'.
+[Sat Aug 24 21:07:46.122083 2024] [wsgi:info] [pid 17859:tid 140528511383424] mod_wsgi (pid=17859): Attach interpreter ''.
+[Sat Aug 24 21:07:46.148078 2024] [wsgi:info] [pid 17859:tid 140528511383424] mod_wsgi (pid=17859): Adding '/opt/ICLback/.venv/bin/python3' to path.
+[Sat Aug 24 21:07:47.200536 2024] [wsgi:info] [pid 17859:tid 140528481244736] mod_wsgi (pid=17859): Create interpreter 'ICLback|'.
+[Sat Aug 24 21:07:47.228265 2024] [wsgi:info] [pid 17859:tid 140528481244736] mod_wsgi (pid=17859): Adding '/opt/ICLback/.venv/bin/python3' to path.
+[Sat Aug 24 21:07:47.230229 2024] [wsgi:info] [pid 17859:tid 140528481244736] [remote 204.18.243.228:57042] mod_wsgi (pid=17859, process='ICLback', application='ICLback|'): Loading Python script file '/opt/ICLback/tagging/wsgi.py'.
+[Sat Aug 24 21:07:48.249407 2024] [wsgi:error] [pid 17859:tid 140528481244736] CustomUserAdmin is being registered
+[Sat Aug 24 21:07:48.551611 2024] [wsgi:error] [pid 17859:tid 140528481244736] [remote 204.18.243.228:57042] Unauthorized: /
+[Sat Aug 24 21:07:51.416396 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:57054] Not Found: /\xd8\xb4\xdb\x8c\xd9\xbe\xd9\x87\xd8\xaf
+[Sat Aug 24 21:08:02.013429 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422] Internal Server Error: /admin/login/
+[Sat Aug 24 21:08:02.013620 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422] Traceback (most recent call last):
+[Sat Aug 24 21:08:02.013657 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+[Sat Aug 24 21:08:02.013694 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     return self.cursor.execute(sql, params)
+[Sat Aug 24 21:08:02.013756 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+[Sat Aug 24 21:08:02.013777 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     return super().execute(query, params)
+[Sat Aug 24 21:08:02.013793 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422] sqlite3.OperationalError: attempt to write a readonly database
+[Sat Aug 24 21:08:02.013885 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422] 
+[Sat Aug 24 21:08:02.013909 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422] The above exception was the direct cause of the following exception:
+[Sat Aug 24 21:08:02.013926 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422] 
+[Sat Aug 24 21:08:02.013940 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422] Traceback (most recent call last):
+[Sat Aug 24 21:08:02.013957 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+[Sat Aug 24 21:08:02.013974 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     response = get_response(request)
+[Sat Aug 24 21:08:02.013990 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+[Sat Aug 24 21:08:02.014006 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[Sat Aug 24 21:08:02.014025 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/utils/decorators.py", line 48, in _wrapper
+[Sat Aug 24 21:08:02.014042 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     return bound_method(*args, **kwargs)
+[Sat Aug 24 21:08:02.014057 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+[Sat Aug 24 21:08:02.014072 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     response = view_func(request, *args, **kwargs)
+[Sat Aug 24 21:08:02.014089 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 440, in login
+[Sat Aug 24 21:08:02.014105 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     return LoginView.as_view(**defaults)(request)
+[Sat Aug 24 21:08:02.014158 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+[Sat Aug 24 21:08:02.014183 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     return self.dispatch(request, *args, **kwargs)
+[Sat Aug 24 21:08:02.014201 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/utils/decorators.py", line 48, in _wrapper
+[Sat Aug 24 21:08:02.014217 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     return bound_method(*args, **kwargs)
+[Sat Aug 24 21:08:02.014232 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/views/decorators/debug.py", line 143, in sensitive_post_parameters_wrapper
+[Sat Aug 24 21:08:02.014251 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     return view(request, *args, **kwargs)
+[Sat Aug 24 21:08:02.014268 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/utils/decorators.py", line 48, in _wrapper
+[Sat Aug 24 21:08:02.014283 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     return bound_method(*args, **kwargs)
+[Sat Aug 24 21:08:02.014298 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+[Sat Aug 24 21:08:02.014338 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     result = _process_exception(request, e)
+[Sat Aug 24 21:08:02.014356 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+[Sat Aug 24 21:08:02.014374 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     response = view_func(request, *args, **kwargs)
+[Sat Aug 24 21:08:02.014394 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/utils/decorators.py", line 48, in _wrapper
+[Sat Aug 24 21:08:02.014418 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     return bound_method(*args, **kwargs)
+[Sat Aug 24 21:08:02.014440 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+[Sat Aug 24 21:08:02.014459 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     response = view_func(request, *args, **kwargs)
+[Sat Aug 24 21:08:02.014480 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/contrib/auth/views.py", line 88, in dispatch
+[Sat Aug 24 21:08:02.014504 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     return super().dispatch(request, *args, **kwargs)
+[Sat Aug 24 21:08:02.014525 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 143, in dispatch
+[Sat Aug 24 21:08:02.014556 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     return handler(request, *args, **kwargs)
+[Sat Aug 24 21:08:02.014580 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/views/generic/edit.py", line 151, in post
+[Sat Aug 24 21:08:02.014603 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     return self.form_valid(form)
+[Sat Aug 24 21:08:02.014634 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/contrib/auth/views.py", line 107, in form_valid
+[Sat Aug 24 21:08:02.014654 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     auth_login(self.request, form.get_user())
+[Sat Aug 24 21:08:02.014671 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/contrib/auth/__init__.py", line 126, in login
+[Sat Aug 24 21:08:02.014690 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     request.session.cycle_key()
+[Sat Aug 24 21:08:02.014707 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/base.py", line 304, in cycle_key
+[Sat Aug 24 21:08:02.014723 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     self.create()
+[Sat Aug 24 21:08:02.014739 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/db.py", line 54, in create
+[Sat Aug 24 21:08:02.014757 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     self.save(must_create=True)
+[Sat Aug 24 21:08:02.014772 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/contrib/sessions/backends/db.py", line 86, in save
+[Sat Aug 24 21:08:02.014845 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     obj.save(
+[Sat Aug 24 21:08:02.014867 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/db/models/base.py", line 822, in save
+[Sat Aug 24 21:08:02.014885 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     self.save_base(
+[Sat Aug 24 21:08:02.014901 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/db/models/base.py", line 909, in save_base
+[Sat Aug 24 21:08:02.014916 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     updated = self._save_table(
+[Sat Aug 24 21:08:02.014934 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/db/models/base.py", line 1071, in _save_table
+[Sat Aug 24 21:08:02.014950 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     results = self._do_insert(
+[Sat Aug 24 21:08:02.014965 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/db/models/base.py", line 1112, in _do_insert
+[Sat Aug 24 21:08:02.014982 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     return manager._insert(
+[Sat Aug 24 21:08:02.014999 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+[Sat Aug 24 21:08:02.015026 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     return getattr(self.get_queryset(), name)(*args, **kwargs)
+[Sat Aug 24 21:08:02.015047 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1847, in _insert
+[Sat Aug 24 21:08:02.015064 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     return query.get_compiler(using=using).execute_sql(returning_fields)
+[Sat Aug 24 21:08:02.015080 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1823, in execute_sql
+[Sat Aug 24 21:08:02.015130 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     cursor.execute(sql, params)
+[Sat Aug 24 21:08:02.015150 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+[Sat Aug 24 21:08:02.015169 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     return super().execute(sql, params)
+[Sat Aug 24 21:08:02.015187 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+[Sat Aug 24 21:08:02.015208 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     return self._execute_with_wrappers(
+[Sat Aug 24 21:08:02.015227 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+[Sat Aug 24 21:08:02.015245 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     return executor(sql, params, many, context)
+[Sat Aug 24 21:08:02.015261 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+[Sat Aug 24 21:08:02.015299 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     with self.db.wrap_database_errors:
+[Sat Aug 24 21:08:02.015317 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+[Sat Aug 24 21:08:02.015332 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     raise dj_exc_value.with_traceback(traceback) from exc_value
+[Sat Aug 24 21:08:02.015350 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+[Sat Aug 24 21:08:02.015367 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     return self.cursor.execute(sql, params)
+[Sat Aug 24 21:08:02.015382 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]   File "/opt/ICLback/.venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+[Sat Aug 24 21:08:02.015398 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422]     return super().execute(query, params)
+[Sat Aug 24 21:08:02.015416 2024] [wsgi:error] [pid 17859:tid 140528472852032] [remote 204.18.243.228:43422] django.db.utils.OperationalError: attempt to write a readonly database
+[Sat Aug 24 21:09:07.020226 2024] [reqtimeout:info] [pid 17860:tid 140527018169920] [client 204.18.243.228:43754] AH01382: Request header read timeout
+[Sat Aug 24 21:09:59.906354 2024] [wsgi:info] [pid 17859:tid 140528511383424] mod_wsgi (pid=17859): Shutdown requested 'ICLback'.
+[Sat Aug 24 21:10:04.078550 2024] [wsgi:info] [pid 18100:tid 140056067536768] mod_wsgi (pid=18100): Attach interpreter ''.
+[Sat Aug 24 21:10:04.104498 2024] [wsgi:info] [pid 18100:tid 140056067536768] mod_wsgi (pid=18100): Adding '/opt/ICLback/.venv/bin/python3' to path.
+[Sat Aug 24 21:10:10.041748 2024] [wsgi:info] [pid 18100:tid 140056037398080] mod_wsgi (pid=18100): Create interpreter 'ICLback|'.
+[Sat Aug 24 21:10:10.068073 2024] [wsgi:info] [pid 18100:tid 140056037398080] mod_wsgi (pid=18100): Adding '/opt/ICLback/.venv/bin/python3' to path.
+[Sat Aug 24 21:10:10.069953 2024] [wsgi:info] [pid 18100:tid 140056037398080] [remote 204.18.243.228:54004] mod_wsgi (pid=18100, process='ICLback', application='ICLback|'): Loading Python script file '/opt/ICLback/tagging/wsgi.py'.
+[Sat Aug 24 21:10:11.139387 2024] [wsgi:error] [pid 18100:tid 140056037398080] CustomUserAdmin is being registered
+[Sat Aug 24 21:13:07.517692 2024] [wsgi:info] [pid 18100:tid 140056067536768] mod_wsgi (pid=18100): Shutdown requested 'ICLback'.
