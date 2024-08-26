@@ -93,3 +93,5 @@ class StoreResponseView(View):
         except Exception as e:
             # Handle errors with basic error messages
             return JsonResponse({'status': 'error', 'message': str(e)}, status=400)
+
+# ICLback
