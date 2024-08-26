@@ -62,7 +62,7 @@ class StoreResponseView(View):
             answers = data.get('answers', [])
             volunteer = User.objects.get(id=request.user.id)
             # Step 1: Create a new entry in the questionnaire table using the 'sql_server_db' database
-            questionnaire = Questionnaire.objects.using('sql_server_db').create(
+            questionnaire = Questionnaire.objects.create(
                 volunteer_id=volunteer.id,
                 chat_id=chat_id,
                 time=timezone.now(),  # Automatically capture the current timestamp
@@ -74,13 +74,13 @@ class StoreResponseView(View):
                 answer_ids = answer.get('answer_ids', [])
                 message_ids = answer.get('message_ids', [])
 
-                question = Question.objects.using('sql_server_db').get(id=question_id)  # Fetch the Question instance
+                question = Question.objects.get(id=question_id)  # Fetch the Question instance
 
                 # Ensure every answer_id is associated with every message_id
                 for answer_id in answer_ids:
-                    option = Option.objects.using('sql_server_db').get(id=answer_id)  # Fetch the Option instance
+                    option = Option.objects.get(id=answer_id)  # Fetch the Option instance
                     for message_id in message_ids:
-                        Answer.objects.using('sql_server_db').create(
+                        Answer.objects.create(
                             questionnaire=questionnaire,
                             question=question,
                             answer=option,

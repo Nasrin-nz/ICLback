@@ -3,54 +3,39 @@ from django.contrib.auth.models import User
 
 
 class Question(models.Model):
-    question = models.TextField()
+    question = models.TextField(verbose_name="سوال")
 
     class Meta:
-        db_table = 'questions'
+        verbose_name = "سوال"
+        verbose_name_plural = "سوالات"
 
 
 class Questionnaire(models.Model):
-    volunteer = models.ForeignKey(User, on_delete=models.CASCADE)
-    chat_id = models.IntegerField()  # The ID of the conversation
-    time = models.DateTimeField(auto_now_add=True)  # Automatically set the time when the record is created
+    volunteer = models.ForeignKey(User, on_delete=models.CASCADE,verbose_name="پرسشنامه")
+    chat_id = models.IntegerField(verbose_name="ایدی چت")  # The ID of the conversation
+    time = models.DateTimeField(auto_now_add=True, verbose_name="زمان")  # Automatically set the time when the record is created
 
     class Meta:
-        db_table = 'questionnaire'  # Use the name of the table you created in SSMS
+        verbose_name = "پرسش نامه"
+        verbose_name_plural = "پرسش نامه ها"
 
-    def save(self, *args, **kwargs):
-        # Ensure that saving uses the SQL Server database
-        if not kwargs.get('using'):
-            kwargs['using'] = 'sql_server_db'
-        super(Questionnaire, self).save(*args, **kwargs)
 
 
 class Answer(models.Model):
-    questionnaire = models.ForeignKey("Questionnaire", on_delete=models.CASCADE)
-    question = models.ForeignKey("Question", on_delete=models.CASCADE, db_column='question_id')  # Foreign key to the Question model
-    answer = models.ForeignKey("Option", on_delete=models.CASCADE, db_column='answer_id')  # Foreign key to the Option model
-    chat_id = models.TextField()  # This remains as it stores the list of message IDs as a comma-separated string
+    questionnaire = models.ForeignKey("Questionnaire", on_delete=models.CASCADE, verbose_name="پرسشنامه")
+    question = models.ForeignKey("Question", on_delete=models.CASCADE, db_column='question_id', verbose_name="سوال")  # Foreign key to the Question model
+    answer = models.ForeignKey("Option", on_delete=models.CASCADE, db_column='answer_id', verbose_name="جواب")  # Foreign key to the Option model
+    chat_id = models.TextField(verbose_name="ایدی چت")  # This remains as it stores the list of message IDs as a comma-separated string
 
     class Meta:
-        db_table = 'answers'  # Use the name of the table you created in SSMS
-
-    def save(self, *args, **kwargs):
-        # Ensure that saving uses the SQL Server database
-        if not kwargs.get('using'):
-            kwargs['using'] = 'sql_server_db'
-        super(Answer, self).save(*args, **kwargs)
+        verbose_name = "جواب"
+        verbose_name_plural = "جواب ها"
 
 
-class Chats(models.Model):
-    text = models.TextField()
-    class Meta:
-        db_table = 'chats'
 
 
 class Option(models.Model):
-    Answers = models.TextField()  # Only the 'Answers' column is defined
+    Answers = models.TextField(verbose_name="جواب ها")  # Only the 'Answers' column is defined
     class Meta:
-        db_table = 'options'  # Specify the table name in your SQL Server database
-
-
-
-
+        verbose_name = "گزینه"
+        verbose_name_plural = "گزینه ها"
