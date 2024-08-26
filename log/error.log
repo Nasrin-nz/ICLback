@@ -271,3 +271,32 @@
 [Sat Aug 24 21:10:10.069953 2024] [wsgi:info] [pid 18100:tid 140056037398080] [remote 204.18.243.228:54004] mod_wsgi (pid=18100, process='ICLback', application='ICLback|'): Loading Python script file '/opt/ICLback/tagging/wsgi.py'.
 [Sat Aug 24 21:10:11.139387 2024] [wsgi:error] [pid 18100:tid 140056037398080] CustomUserAdmin is being registered
 [Sat Aug 24 21:13:07.517692 2024] [wsgi:info] [pid 18100:tid 140056067536768] mod_wsgi (pid=18100): Shutdown requested 'ICLback'.
+[Sun Aug 25 13:36:28.586013 2024] [wsgi:info] [pid 45412:tid 140705437718400] mod_wsgi (pid=45412): Attach interpreter ''.
+[Sun Aug 25 13:36:28.609013 2024] [wsgi:info] [pid 45412:tid 140705437718400] mod_wsgi (pid=45412): Adding '/opt/ICLback/.venv/bin/python3' to path.
+[Sun Aug 25 13:41:07.523927 2024] [wsgi:info] [pid 45412:tid 140705437718400] mod_wsgi (pid=45412): Shutdown requested 'ICLback'.
+[Sun Aug 25 13:41:07.525363 2024] [wsgi:info] [pid 45412:tid 140705437718400] mod_wsgi (pid=45412): Stopping process 'ICLback'.
+[Sun Aug 25 13:41:07.525400 2024] [wsgi:info] [pid 45412:tid 140705437718400] mod_wsgi (pid=45412): Destroying interpreters.
+[Sun Aug 25 13:41:07.525455 2024] [wsgi:info] [pid 45412:tid 140705437718400] mod_wsgi (pid=45412): Cleanup interpreter ''.
+[Sun Aug 25 13:41:07.525707 2024] [wsgi:info] [pid 45412:tid 140705437718400] mod_wsgi (pid=45412): Terminating Python.
+[Sun Aug 25 13:41:07.539760 2024] [wsgi:info] [pid 45412:tid 140705437718400] mod_wsgi (pid=45412): Python has shutdown.
+[Sun Aug 25 13:41:07.539954 2024] [wsgi:info] [pid 45412:tid 140705437718400] mod_wsgi (pid=45412): Exiting process 'ICLback'.
+[Sun Aug 25 13:41:08.657028 2024] [wsgi:info] [pid 47340] mod_wsgi (pid=47340): Attach interpreter ''.
+[Sun Aug 25 13:41:08.688764 2024] [wsgi:info] [pid 47340] mod_wsgi (pid=47340): Adding '/opt/ICLback/.venv/bin/python3' to path.
+[Sun Aug 25 13:41:08.938876 2024] [wsgi:info] [pid 47340] mod_wsgi (pid=47340): Shutdown requested 'ICLback'.
+[Sun Aug 25 13:41:08.940376 2024] [wsgi:info] [pid 47340] mod_wsgi (pid=47340): Stopping process 'ICLback'.
+[Sun Aug 25 13:41:08.940407 2024] [wsgi:info] [pid 47340] mod_wsgi (pid=47340): Destroying interpreters.
+[Sun Aug 25 13:41:08.940418 2024] [wsgi:info] [pid 47340] mod_wsgi (pid=47340): Cleanup interpreter ''.
+[Sun Aug 25 13:41:08.940465 2024] [wsgi:info] [pid 47340] mod_wsgi (pid=47340): Terminating Python.
+[Sun Aug 25 13:41:08.947610 2024] [wsgi:info] [pid 47340] mod_wsgi (pid=47340): Python has shutdown.
+[Sun Aug 25 13:41:08.947688 2024] [wsgi:info] [pid 47340] mod_wsgi (pid=47340): Exiting process 'ICLback'.
+[Sun Aug 25 13:41:10.071671 2024] [wsgi:info] [pid 47386] mod_wsgi (pid=47386): Attach interpreter ''.
+[Sun Aug 25 13:41:10.107326 2024] [wsgi:info] [pid 47386] mod_wsgi (pid=47386): Adding '/opt/ICLback/.venv/bin/python3' to path.
+[Mon Aug 26 00:00:02.386157 2024] [wsgi:info] [pid 47386] mod_wsgi (pid=47386): Shutdown requested 'ICLback'.
+[Mon Aug 26 00:00:02.391963 2024] [wsgi:info] [pid 47386] mod_wsgi (pid=47386): Stopping process 'ICLback'.
+[Mon Aug 26 00:00:02.392017 2024] [wsgi:info] [pid 47386] mod_wsgi (pid=47386): Destroying interpreters.
+[Mon Aug 26 00:00:02.392054 2024] [wsgi:info] [pid 47386] mod_wsgi (pid=47386): Cleanup interpreter ''.
+[Mon Aug 26 00:00:02.392250 2024] [wsgi:info] [pid 47386] mod_wsgi (pid=47386): Terminating Python.
+[Mon Aug 26 00:00:02.427396 2024] [wsgi:info] [pid 47386] mod_wsgi (pid=47386): Python has shutdown.
+[Mon Aug 26 00:00:02.427507 2024] [wsgi:info] [pid 47386] mod_wsgi (pid=47386): Exiting process 'ICLback'.
+[Mon Aug 26 00:00:02.944165 2024] [wsgi:info] [pid 54780] mod_wsgi (pid=54780): Attach interpreter ''.
+[Mon Aug 26 00:00:02.986000 2024] [wsgi:info] [pid 54780] mod_wsgi (pid=54780): Adding '/opt/ICLback/.venv/bin/python3' to path.
